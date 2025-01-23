@@ -1,0 +1,39 @@
+/************ Container ************/
+.container {
+    padding: 0 15px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/************ Row ************/
+.row {
+    display: grid;
+    gap: 20px;
+}
+
+.row-4 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .row-4 {
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+}
